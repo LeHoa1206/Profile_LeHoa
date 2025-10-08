@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { FaCode, FaPalette, FaRocket, FaUsers, FaHeart, FaLightbulb } from 'react-icons/fa';
 import Image from '../Image';
+import profileImg from '../../assets/images/profile.jpg';
 
 const About = () => {
   const ref = useRef(null);
@@ -112,11 +113,11 @@ const About = () => {
               animate={isInView ? { scale: 1, opacity: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <Image
-                src="../Image/profile.jpg"
-                alt="Your Name"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
-              />
+            <Image
+              src={profileImg}
+              alt="Lê Hòa"
+              className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+           />
               <motion.div
                 className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary-500 rounded-full flex items-center justify-center"
                 animate={{ rotate: 360 }}
@@ -127,17 +128,13 @@ const About = () => {
             </motion.div>
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-dark-900 dark:text-white">
-                Hi there! I'm Your Name
-              </h3>
+                  Lê Hòa ! 
+                </h3>
               <p className="text-dark-600 dark:text-dark-300 leading-relaxed">
-                I'm a passionate full-stack developer with over 3 years of experience in creating 
-                digital solutions that make a difference. I specialize in modern web technologies 
-                and love turning complex problems into simple, beautiful, and intuitive designs.
+                Tôi là một lập trình viên full-stack đầy nhiệt huyết với hơn 3 năm kinh nghiệm trong việc tạo ra các giải pháp kỹ thuật số tạo nên sự khác biệt. Tôi chuyên về các công nghệ web hiện đại và yêu thích việc biến những vấn đề phức tạp thành những thiết kế đơn giản, đẹp mắt và trực quan.
               </p>
               <p className="text-dark-600 dark:text-dark-300 leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or sharing my knowledge with the developer community. I believe 
-                in continuous learning and staying up-to-date with the latest trends in web development.
+               Khi không viết code, bạn có thể thấy tôi đang khám phá các công nghệ mới, đóng góp vào các dự án nguồn mở hoặc chia sẻ kiến ​​thức của mình với cộng đồng nhà phát triển. Tôi tin vào việc học hỏi liên tục và cập nhật các xu hướng mới nhất trong phát triển web.
               </p>
             </div>
 
