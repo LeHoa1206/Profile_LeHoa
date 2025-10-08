@@ -17,7 +17,7 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
+    { icon: FaGithub, href: 'https://github.com/lehoa1206', label: 'GitHub' },
     { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
     { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
     { icon: FaEnvelope, href: 'mailto:your@email.com', label: 'Email' },

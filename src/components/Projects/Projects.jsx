@@ -234,7 +234,7 @@ const Projects = () => {
           transition={{ duration: 0.6, delay: 1.2 }}
         >
           <motion.a
-            href="https://github.com"
+            href="https://github.com/lehoa1206"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center"
