@@ -16,42 +16,42 @@ const About = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
 
   const stats = [
-    { number: '50+', label: 'Projects Completed' },
-    { number: '3+', label: 'Years Experience' },
-    { number: '100%', label: 'Client Satisfaction' },
-    { number: '24/7', label: 'Support Available' },
+    { number: '50+', label: 'Dự Án Hoàn Thành' },
+    { number: '3+', label: 'Năm Kinh Nghiệm' },
+    { number: '100%', label: 'Khách Hàng Hài Lòng' },
+    { number: '24/7', label: 'Hỗ Trợ Liên Tục' },
   ];
 
   const values = [
     {
       icon: FaCode,
-      title: 'Clean Code',
-      description: 'I write maintainable, scalable, and efficient code that follows best practices and industry standards.'
+      title: 'Code Sạch',
+      description: 'Tôi viết code dễ bảo trì, có khả năng mở rộng và hiệu quả, tuân thủ các phương pháp tốt nhất và tiêu chuẩn ngành.'
     },
     {
       icon: FaPalette,
-      title: 'Beautiful Design',
-      description: 'I believe in creating user interfaces that are not only functional but also visually appealing and intuitive.'
+      title: 'Thiết Kế Đẹp',
+      description: 'Tôi tin vào việc tạo ra giao diện người dùng không chỉ hoạt động tốt mà còn hấp dẫn về mặt thị giác và trực quan.'
     },
     {
       icon: FaRocket,
-      title: 'Performance',
-      description: 'I optimize applications for speed and efficiency, ensuring the best possible user experience.'
+      title: 'Hiệu Suất',
+      description: 'Tôi tối ưu hóa ứng dụng về tốc độ và hiệu quả, đảm bảo trải nghiệm người dùng tốt nhất có thể.'
     },
     {
       icon: FaUsers,
-      title: 'Collaboration',
-      description: 'I work well in teams and enjoy collaborating with designers, developers, and stakeholders.'
+      title: 'Hợp Tác',
+      description: 'Tôi làm việc tốt trong nhóm và thích cộng tác với các nhà thiết kế, lập trình viên và các bên liên quan.'
     },
     {
       icon: FaHeart,
-      title: 'Passion',
-      description: 'I am passionate about technology and continuously learning new skills and staying up-to-date.'
+      title: 'Đam Mê',
+      description: 'Tôi đam mê công nghệ và liên tục học hỏi các kỹ năng mới, luôn cập nhật xu hướng mới nhất.'
     },
     {
       icon: FaLightbulb,
-      title: 'Innovation',
-      description: 'I love solving complex problems and finding creative solutions to challenging technical issues.'
+      title: 'Sáng Tạo',
+      description: 'Tôi yêu thích giải quyết các vấn đề phức tạp và tìm ra giải pháp sáng tạo cho các thách thức kỹ thuật.'
     },
   ];
 
@@ -86,7 +86,7 @@ const About = () => {
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            About <span className="gradient-text">Me</span>
+            Về <span className="gradient-text">Tôi</span>
           </motion.h2>
           <motion.p
             className="text-lg text-dark-600 dark:text-dark-300 max-w-3xl mx-auto"
@@ -94,7 +94,7 @@ const About = () => {
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            I'm a passionate developer who loves creating amazing digital experiences
+            Tôi là một lập trình viên đam mê, yêu thích tạo ra những trải nghiệm số tuyệt vời
           </motion.p>
         </motion.div>
 
@@ -211,7 +211,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Let's Work Together
+            Hợp Tác Cùng Tôi
           </motion.a>
         </motion.div>
       </div>
